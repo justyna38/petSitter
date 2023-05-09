@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* Header styles */
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px;
+  color: #333;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Form styles */
+#form-container, #animal-info-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+#form-container input[type="text"],#form-container input[type="email"], #form-container input[type="password"], #animal-info-container input[type="text"] {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+#form-container input[type="text"]:focus,#form-container input[type="email"]:focus, #form-container input[type="password"]:focus, #animal-info-container input[type="text"]:focus {
+  border-bottom: 2px solid #333;
+}
+
+#form-container .sub,#animal-info-container .sub  {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#form-container .sub:hover {
+  background-color: #555;
+}
+
+/* Select styles */
+#animal-select, #race-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  background-color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Radio Button styles */
+fieldset {
+  margin-bottom: 20px;
+  border: none;
+  font-size: 16px;
+}
+
+legend, label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  position: relative;
+  border: 1px solid #ccc;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #333;
+}

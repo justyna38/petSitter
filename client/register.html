@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Créer un compte</h1>
+    <br>
+
+    <div id="form-container">
+        <h3>Les informations sur l'humain</h3>
+        <form  method="post" id="human-form">
+          <input placeholder="Name" name="firstName" type="text">
+          <br>
+          <input placeholder="Prénom" name="lastName" type="text">
+          <br>
+          <input placeholder="Email" name="email" type="text">
+          <br>
+          <input placeholder="Password" name="password" type="password">
+          <br>
+          <input placeholder="numero de telephone" name="phone" type="text">
+          <br>
+          <input placeholder="Rue" name="rue" type="text">
+          <br>
+          <input placeholder="Code postale" name="cdp" type="text">
+          <br>
+          <input placeholder="ville" name="ville" type="text">
+          <br>
+          <input class="sub" type="button" value="Etape suivante" onclick="showAnimalInfo(event)">
+          <br>
+        </form>
+      </div>
+      
+      <div id="animal-info-container" style="display:none">
+        <h3>Les informations sur l'animal</h3>
+        <form method="post" id="animal-form" >
+          <label for="animal-select">Sélectionnez un animal :</label>
+          <select id="animal-select" name="type" onchange="updateRaces()">
+          </select>
+          <br>
+          <label for="race-select">Sélectionnez une race :</label>
+          <select id="race-select" name="race">
+          </select>
+          <br>
+          <input placeholder="Name" name="name" type="text">
+          <br>
+          <input placeholder="Age" name="age" type="text">
+          <br>
+          <fieldset>
+            <legend>Sexe</legend>
+            <input type="radio" id="male" name="sexe" value="male">
+            <label for="male">Mâle</label>
+            <input type="radio" id="female" name="sexe" value="female">
+            <label for="female">Femelle</label>
+          </fieldset>
+          <fieldset>
+            <legend>Sterilisé</legend>
+            <input type="radio" id="sterilized-yes" name="sterilisation" value="yes">
+            <label for="sterilized-yes">Oui</label>
+            <input type="radio" id="sterilized-no" name="sterilisation" value="no">
+            <label for="sterilized-no">Non</label>
+          </fieldset>
+          <fieldset>
+            <legend>Cet animal s'entend avec les chats</legend>
+            <input type="radio" id="chats-yes" name="ententeChats" value="yes">
+            <label for="chats-yes">Oui</label>
+            <input type="radio" id="chats-no" name="ententeChats" value="no">
+            <label for="chats-no">Non</label>
+          </fieldset>
+          <fieldset>
+            <legend>Cet animal s'entend avec les chiens</legend>
+            <input type="radio" id="dogs-yes" name="ententeChiens" value="yes">
+            <label for="dogs-yes">Oui</label>
+            <input type="radio" id="dogs-no" name="ententeChiens" value="no">
+            <label for="dogs-no">Non</label>
+          </fieldset>
+          <input class="sub" type="submit" value="Enregistrer" onclick="submitRegistrationForm(event)">
+          
+        </form>
+      </div>
+      
+        
+      <script src="/script.js"></script>
+      <script src="test.js"></script>
+    
+</body>
+</html>
